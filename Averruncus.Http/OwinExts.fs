@@ -10,6 +10,10 @@ open Averruncus.Http
 [<AutoOpen>]
 [<CompilationRepresentation(CompilationRepresentationFlags.ModuleSuffix)>]
 module OwinExts =
+    open NLog
+    open Averruncus.Http.Extensions
+    let logger = LogManager.GetCurrentClassLogger()
+
     let private ofOwinRequest (x: IOwinRequest) = { 
         Method = x.Method
         Url = x.Uri.ToString()
@@ -21,6 +25,10 @@ module OwinExts =
         member this.RunServices(services: (HttpRequest -> HttpResponse option) list) =
             this.Run(fun context ->
                 let rq = context.Request |> ofOwinRequest
+
+                // trace
+                rq.Log()
+
                 let rs =
                     match services |> Seq.choose(fun x -> rq |> x) |> Seq.truncate 1 |> Seq.toList with 
                     | [] -> notFound

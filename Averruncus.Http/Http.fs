@@ -15,6 +15,7 @@ type HttpMessage = {
     Body: string
     Status: int
 }
+
 //with
 //    static member ToMessage(x: HttpMessage): Message = { Locator = ""; Content = "" }
 //    static member ToMessage(x: Message): HttpMessage = { Method = "GET"; Url = ""; Header = Map.empty; Body = "" }
@@ -90,6 +91,7 @@ module Http =
                         return None
                 }
             |> Config.rearrange
+
 //        let inline fmap2(f: 'p0 -> 'p1 -> 'r): 'config -> _ -> _ =
 //            fun rq ->
 //                config {
