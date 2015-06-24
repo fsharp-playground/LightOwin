@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.22609.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Averruncus.Http", "Averruncus.Http\Averruncus.Http.fsproj", "{524236F2-D938-4B42-8399-F6D818D7669D}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Averruncus.Core", "Averruncus.Core\Averruncus.Core.fsproj", "{F26FB909-77B4-48F8-A867-53C2641D1E29}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Averruncus.Services", "Averruncus.Services\Averruncus.Services.fsproj", "{A7BDE9BD-86DF-4BF9-AEF4-F700A671D6A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{524236F2-D938-4B42-8399-F6D818D7669D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{524236F2-D938-4B42-8399-F6D818D7669D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{524236F2-D938-4B42-8399-F6D818D7669D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{524236F2-D938-4B42-8399-F6D818D7669D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F26FB909-77B4-48F8-A867-53C2641D1E29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F26FB909-77B4-48F8-A867-53C2641D1E29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F26FB909-77B4-48F8-A867-53C2641D1E29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F26FB909-77B4-48F8-A867-53C2641D1E29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7BDE9BD-86DF-4BF9-AEF4-F700A671D6A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7BDE9BD-86DF-4BF9-AEF4-F700A671D6A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7BDE9BD-86DF-4BF9-AEF4-F700A671D6A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7BDE9BD-86DF-4BF9-AEF4-F700A671D6A0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
